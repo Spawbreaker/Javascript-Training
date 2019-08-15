@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Document</title>
+
+    <!-- Javascript -->
+    <script>
+      function myFunction() {
+        document.getElementById("demo").innerHTML =
+          "WE DID SOMETHING COOL OMG!";
+      }
+      function runAlert() {
+        document.getElementById("demo").innerHTML =
+          "WHERE DID THAT POP UP COME FROM?!";
+        window.alert(
+          "Aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaah - Sugarcube.3832."
+        );
+      }
+      function logConsole() {
+        document.getElementById("demo").innerHTML =
+          "SECRET MESSAGES IN THE CONSOLE!";
+        console.log("WOAAAH THIS IS SO CRAZY RIGHT?!");
+      }
+    </script>
+    <script src="./external/scripts.js"></script>
+    <!-- /Javascript -->
+  </head>
+  <body>
+    <h1>My first Javascript scripts!</h1>
+    <p id="demo">What about we do something cool</p>
+    <div class="clearFix">
+      <a class="btn stackBtn" onclick="myFunction()" href="#">Click me!</a>
+      <a href="#" class="btn stackBtn" onclick="runAlert()"
+        >Wanna see an alert?</a
+      >
+      <a href="#" class="btn stackBtn" onclick="logConsole()"
+        >This will log to the console!</a
+      >
+      <a href="#" class="btn stackBtn" onClick="externalFunction()"
+        >Wait, an EXTERNAL CODE?</a
+      >
+      <a href="#" class="btn stackBtn" onClick="cssChange()"
+        >You wouldn't dare change my FONT!</a
+      >
+    </div>
+    <div class="clearFix">
+      <img
+        src="../img/bear1.jpg"
+        alt=""
+        id="bearImg"
+        class="clearFix"
+        name="bear"
+      />
+      <a href="#bear" class="btn clearFix" onClick="bearToggle()"
+        >DANCE BEAR! DANCE!</a
+      >
+      <a
+        href="#bear"
+        id="bearHideBtn"
+        class="btn"
+        onClick="toggleBearsibility()"
+        >The bear is scary...</a
+      >
+    </div>
+  </body>
+</html>
